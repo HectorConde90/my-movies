@@ -1,4 +1,4 @@
-export const filmActors = [
+export default filmActors = [
     {idPelicula:332,idActor:1},
     {idPelicula:440,idActor:2},
     {idPelicula:554,idActor:2},

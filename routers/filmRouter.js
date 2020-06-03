@@ -1,5 +1,5 @@
 import Router from 'express';
-import list from 'list.js';
+import list from '../controllers/films/list.js';
 import listOne   from '../controllers/films/listOne.js';
 import create    from '../controllers/films/create.js';
 import updateOne from '../controllers/films/updateOne.js';
@@ -11,15 +11,15 @@ const router = Router();
 
 router.route('/')
       .get(list)
-      .post(create);
+      // .post(create);
 
-router.route('/:id')
-      .get(listOne)
-      .update(updateOne)
-      .remove(removeOne);
+// router.route('/:id')
+//       .get(listOne)
+//       .update(updateOne)
+//       .remove(removeOne);
 
-router.route('/:id/actors')
-      .get(listActor);
+// router.route('/:id/actors')
+//       .get(listActor);
 
 // router.get('/',list);
 // router.post('/', create);

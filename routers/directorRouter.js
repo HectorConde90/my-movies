@@ -1,5 +1,5 @@
-import Router from 'express';
-import list from 'list.js';
+/* import Router from 'express';
+import list from '../controllers/director/list.js';
 import listOne   from '../controllers/director/listOne.js';
 import create    from '../controllers/director/create.js';
 import updateOne from '../controllers/director/updateOne.js';
@@ -17,3 +17,4 @@ router.route('/:id')
       .get(listOne)
       .update(updateOne)
       .remove(removeOne);
+ */

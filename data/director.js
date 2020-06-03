@@ -1,4 +1,4 @@
-export const directors= [
+export default directors= [
     {id:1,nombre:'Paul',apellidos:'A. Edwards',imdb:'NULL'},
 {id:2,nombre:'George',apellidos:'A. Romero',imdb:'NULL'},
 {id:3,nombre:'William',apellidos:'A. Wellman',imdb:'NULL'},

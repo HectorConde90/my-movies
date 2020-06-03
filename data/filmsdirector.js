@@ -1,4 +1,4 @@
-export const filmDirectors = [{idPelicula:700,idDirector:1}
+export default filmDirectors = [{idPelicula:700,idDirector:1}
     ,{idPelicula:242,idDirector:2}
     ,{idPelicula:311,idDirector:2}
     ,{idPelicula:386,idDirector:2}
