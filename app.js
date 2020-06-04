@@ -2,8 +2,8 @@ import express from 'express';
 import cors from 'cors';
 
 import filmRouter from './routers/filmRouter.js';
-import actorRouter from './routers/actorRouter.js';
-import directorRouter from './routers/directorRouter.js';
+// import actorRouter from './routers/actorRouter.js';
+// import directorRouter from './routers/directorRouter.js';
 
 const app = express();
 

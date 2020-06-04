@@ -1,4 +1,4 @@
-import {films} from '../../data/films.js';
+import {films} from '../../data/film.js';
 
 class FilmDAO{
 
@@ -8,6 +8,10 @@ class FilmDAO{
 
     list(){
         return films;
+    }
+
+    create(film){
+        
     }
 }
 

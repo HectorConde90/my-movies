@@ -1,10 +1,10 @@
 import Router from 'express';
-import list from '../controllers/films/list.js';
-import listOne   from '../controllers/films/listOne.js';
-import create    from '../controllers/films/create.js';
-import updateOne from '../controllers/films/updateOne.js';
-import removeOne from '../controllers/films/removeOne.js';
-import listActor from '../controllers/films/listActor.js';
+import list from '../controller/film/list.js';
+import listOne   from '../controller/film/listOne.js.js.js';
+import create    from '../controller/film/create.js';
+import updateOne from '../controller/film/updateOne.js.js.js';
+import removeOne from '../controller/film/removeOne.js.js.js';
+import listActor from '../controller/film/listActor.js.js.js';
 
 
 const router = Router();
