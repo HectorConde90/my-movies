@@ -1,2 +1,4 @@
 
-GET http://localhost:9000/films
+GET http://localhost:9000/film
+
+

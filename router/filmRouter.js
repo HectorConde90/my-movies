@@ -1,25 +1,27 @@
 import Router from 'express';
 import list from '../controller/film/list.js';
-import listOne   from '../controller/film/listOne.js.js.js';
-import create    from '../controller/film/create.js';
-import updateOne from '../controller/film/updateOne.js.js.js';
-import removeOne from '../controller/film/removeOne.js.js.js';
-import listActor from '../controller/film/listActor.js.js.js';
+import listOne from '../controller/film/listOne.js';
+import buscar from '../controller/film/buscar.js'
+// import create    from '../controller/film/create.js';
+// import updateOne from '../controller/film/updateOne.js.js.js';
+// import removeOne from '../controller/film/removeOne.js.js.js';
+import listActor from '../controller/film/listActor.js';
 
 
 const router = Router();
 
 router.route('/')
       .get(list)
+      .post(buscar)
       // .post(create);
 
-// router.route('/:id')
-//       .get(listOne)
+router.route('/:id')
+      .get(listOne)
 //       .update(updateOne)
 //       .remove(removeOne);
 
-// router.route('/:id/actors')
-//       .get(listActor);
+router.route('/:id/actors')
+       .get(listActor);
 
 // router.get('/',list);
 // router.post('/', create);

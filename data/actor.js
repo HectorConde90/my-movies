@@ -1,4 +1,5 @@
-export default actors = [
+
+export const actors = [
         {id:1,nombre:'Donald',apellidos:'\"\"\"Duck\"\" Dunn\"',imdb:'null'},
         {id:2,nombre:'Vivica',apellidos:'A. Fox',imdb:'null'},
         {id:3,nombre:'Rodney',apellidos:'A. Grant',imdb:'null'},

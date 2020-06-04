@@ -1,0 +1,6 @@
+POST http://localhost:9000/film
+Content-Type: application/json
+
+{
+  "titulo": "dos"
+}
