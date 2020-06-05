@@ -1,6 +1,6 @@
-POST http://localhost:9000/film
+POST http://localhost:9000/film/buscar
 Content-Type: application/json
 
 {
-  "titulo": "dos"
+  "titulo": "despues"
 }

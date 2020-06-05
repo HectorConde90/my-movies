@@ -1,0 +1,37 @@
+// Actualizar pelicula
+PUT http://localhost:9000/film/650
+Content-Type: application/json
+
+{
+  "titulo": "28 días después prueba de quey"
+}
+
+
+
+##############
+
+//Buscar por nombre
+POST http://localhost:9000/film/buscar
+Content-Type: application/json
+
+{
+  "titulo": "despues"
+}
+
+
+##########################
+// Create
+POST http://localhost:9000/film
+Content-Type: application/json
+
+{
+  "titulo": "Despues de lo inesperado",
+  "productora": "Jhon movies"
+}
+
+
+#################
+
+// Delete
+
+DELETE http://localhost:9000/film/1024

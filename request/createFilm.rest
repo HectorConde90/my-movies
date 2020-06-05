@@ -1,0 +1,7 @@
+POST http://localhost:9000/film
+Content-Type: application/json
+
+{
+  "titulo": "Despues de lo inesperado",
+  "productora": "Jhon movies"
+}

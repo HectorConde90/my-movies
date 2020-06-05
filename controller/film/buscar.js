@@ -1,5 +1,5 @@
 import filmDAO from '../../model/film/dao.js';
-
+import HTTPerror from 'http-errors';
 const buscar = async (req, res) => {
 
     try {
@@ -12,6 +12,7 @@ const buscar = async (req, res) => {
         res.json(films);
 
     } catch (error) {
+        next(HTTPerror(err.code, { message: err.message }));
 
 
     }
