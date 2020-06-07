@@ -11,7 +11,7 @@ class FilmDAO{
 
     list(){
         return new Promise((resolve, reject) => {
-            connection.query('SELECT * FROM mymovies.pelicula', (err, rows, fields) => {
+            connection.query('SELECT * FROM pelicula', (err, rows, fields) => {
                 if (err)
                     throw err;
                 resolve(rows);
@@ -39,7 +39,7 @@ class FilmDAO{
         //    return films.find(film => film.id === Number(pId));
         return new Promise((resolve, reject) => {
 
-            connection.query('SELECT * FROM mymovies.pelicula WHERE id = ?', pId, function (err, rows, fields) {
+            connection.query('SELECT * FROM pelicula WHERE id = ?', pId, function (err, rows, fields) {
 
                 if (err)
                     throw err;
@@ -63,7 +63,7 @@ class FilmDAO{
     //    return films.filter(element => element.titulo.toLowerCase().includes(pFilm.toLowerCase()))
         return new Promise((resolve, reject) => {
 
-            connection.query('SELECT * FROM mymovies.pelicula WHERE titulo LIKE  ?', `%${pFilm}%`, function (err, rows, fields) {
+            connection.query('SELECT * FROM pelicula WHERE titulo LIKE  ?', `%${pFilm}%`, function (err, rows, fields) {
 
                 if (err)
                     throw err;

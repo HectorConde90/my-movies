@@ -10,7 +10,7 @@ class DirectorDAO {
     list() {
         return new Promise((resolve, reject) => {
 
-            connection.query('SELECT * FROM mymovies.director', function (err, rows, fields) {
+            connection.query('SELECT * FROM director', function (err, rows, fields) {
 
                 if (err)
                     throw err;

@@ -11,7 +11,7 @@ class ActorDAO {
        
     return new Promise((resolve, reject) => {
 
-            connection.query('SELECT * FROM mymovies.actor', function (err, rows, fields) {
+            connection.query('SELECT * FROM actor', function (err, rows, fields) {
 
                 if (err)
                     throw err; 1
