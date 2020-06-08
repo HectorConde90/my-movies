@@ -1,6 +1,6 @@
-import express from 'express';
-import cors from 'cors';
-import connection from './db.js'
+import express from 'express'; // npm i express
+import cors from 'cors'; // npm i cors
+import connection from './db.js' 
 
 import filmRouter from './router/filmRouter.js';
 import actorRouter from './router/actorRouter.js';

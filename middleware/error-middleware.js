@@ -1,4 +1,4 @@
-import HTTPErrors from 'http-errors';
+import HTTPErrors from 'http-errors'; // npm i http-errors
 
 export default {
     
