@@ -11,8 +11,21 @@ class FilmDAO{
         return Film.find({});
     }
 
-    create(film){
+    create(pFilm) {
         
+        const film = new Film({
+            titulo: film.titulo,
+            date: new Date(),
+            productora: film.productora,
+        });
+        // console.log(req.body);
+        film.save().then(result => {
+            console.log('note saved')
+            res.json(result);
+
+            mongoose.connection.close();
+        })
+        return pFilm;
     }
     
     listOne(pId) {

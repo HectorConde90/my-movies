@@ -1,14 +1,16 @@
 import express from 'express'; // npm i express
 import cors from 'cors'; // npm i cors
-import connection from './db.js' 
+
 
 import filmRouter from './router/filmRouter.js';
 import actorRouter from './router/actorRouter.js';
 import directorRouter from './router/directorRouter.js';
 import errorMiddleware from './middleware/error-middleware.js';
+import dotenv from 'dotenv';
 
 
 // Rutas y definicion de la api con express
+dotenv.config();// importamos las variables de .env
 const app = express();
 
 app.use(cors());

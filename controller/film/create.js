@@ -6,8 +6,8 @@ const create = async (req, res) => {
         // Hace la llamada al módulo que se conecta a la bbdd
         
         const films = await filmDAO.create(req.body);
-
-        res.json(films);
+        console.log('pelicula cargada')
+        // res.json(films);
 
     } catch (error) {
 

@@ -1,5 +1,5 @@
-import { directors } from '../../data/director.js';
-import connection from '../../db.js'
+// import { directors } from '../../data/director.js';
+// import connection from '../../db.js'
 
 class DirectorDAO {
 
